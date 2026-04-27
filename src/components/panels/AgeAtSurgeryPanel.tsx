@@ -3,7 +3,7 @@
 // Dependencies: recharts, lucide-react, tailwindcss
 // Expects: BasePanel, useTracking from your project (stubs included at bottom of file)
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import {
   AreaChart,
   Area,
@@ -72,9 +72,7 @@ const AVG_OCCLUSION = Math.round(
 );
 
 // Build KDE chart data
-function buildChartData(patientAge: number) {
-  const xMin = 0;
-  const xMax = 90;
+function buildChartData(_patientAge: number) {
   const steps = 91;
   const xPoints = Array.from({ length: steps }, (_, i) => i);
 
