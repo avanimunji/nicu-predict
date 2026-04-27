@@ -20,9 +20,9 @@ import {
   // ─── Reference ranges ───────────────────────────────────────────────────────
   
   const RANGES = {
-    hr:   { low: 100, high: 170, unit: 'bpm',  label: 'Heart rate' },
+    hr:   { low: 100, high: 170, target: 140, unit: 'bpm',  label: 'Heart rate' },
     spo2: { low: 75,  high: 100, target: 92,   unit: '%',    label: 'SpO₂' },
-    mbp:  { low: 35,  high: 75,  unit: 'mmHg', label: 'Mean BP' },
+    mbp:  { low: 35,  high: 75,  target: 50, unit: 'mmHg', label: 'Mean BP' },
   }
   
   // ─── Status logic (UNCHANGED — clinically important) ────────────────────────
