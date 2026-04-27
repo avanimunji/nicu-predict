@@ -282,9 +282,9 @@ function DetailView({ patient, chartData }: { patient: Patient; chartData: Retur
     </div>
 
       {/* Stat row */}
-      <div className="flex gap-4 text-[10px] text-white/35 border-t border-white/[0.06] pt-3">
-        <span>No-occlusion cohort n=<strong className="text-white/60">{NO_OCCLUSION_AGES.length}</strong></span>
-        <span>Occlusion cohort n=<strong className="text-white/60">{OCCLUSION_AGES.length}</strong></span>
+      <div className="flex gap-4 text-[10px] text-[var(--color-text-muted)] border-t border-white/[0.06] pt-3">
+        <span>No-occlusion cohort n=<strong className="text-[var(--color-text-secondary)]">{NO_OCCLUSION_AGES.length}</strong></span>
+        <span>Occlusion cohort n=<strong className="text-[var(--color-text-secondary)]">{OCCLUSION_AGES.length}</strong></span>
         <span className="ml-auto">Feature importance rank: <strong className="text-amber-400">#2</strong></span>
       </div>
     </div>
